@@ -1,4 +1,3 @@
----
 services:
   db:
     image: kumar49/secondpro:db
@@ -21,14 +20,14 @@ services:
     deploy:
       replicas: 2
 
-   borrow_service:
+  borrow_service:
     image: kumar49/secondpro:borrowservice
     ports:
       - "5003:5003"
     deploy:
       replicas: 2
 
-   front_service:
+  front_service:
     image: kumar49/secondpro:frontservice
     ports:
       - "5000:5000"

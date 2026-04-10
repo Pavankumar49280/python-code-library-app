@@ -1,34 +1,30 @@
 services:
   db:
-    image: kumar49/secondpro:db
+    image: kumar49/secondproject:db
     ports:
       - "3306:3306"
     deploy:
       replicas: 2
-
   auth_service:
-    image: kumar49/secondpro:authservice
+    image: kumar49/secondproject:authimage
     ports:
       - "5001:5001"
     deploy:
       replicas: 2
-
   book_service:
-    image: kumar49/secondpro:bookservice
+    image: kumar49/secondpro:bookimage
     ports:
       - "5002:5002"
     deploy:
       replicas: 2
-
   borrow_service:
-    image: kumar49/secondpro:borrowservice
+    image: kumar49/secondpro:borrowimage
     ports:
       - "5003:5003"
     deploy:
       replicas: 2
-
   front_service:
-    image: kumar49/secondpro:frontend
+    image: kumar49/secondpro:frontimage
     ports:
       - "5000:5000"
     deploy:

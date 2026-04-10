@@ -12,19 +12,19 @@ services:
     deploy:
       replicas: 2
   book_service:
-    image: kumar49/secondpro:bookimage
+    image: kumar49/secondproject:bookimage
     ports:
       - "5002:5002"
     deploy:
       replicas: 2
   borrow_service:
-    image: kumar49/secondpro:borrowimage
+    image: kumar49/secondproject:borrowimage
     ports:
       - "5003:5003"
     deploy:
       replicas: 2
   front_service:
-    image: kumar49/secondpro:frontimage
+    image: kumar49/secondproject:frontimage
     ports:
       - "5000:5000"
     deploy:

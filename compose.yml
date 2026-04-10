@@ -28,7 +28,7 @@ services:
       replicas: 2
 
   front_service:
-    image: kumar49/secondpro:frontservice
+    image: kumar49/secondpro:frontend
     ports:
       - "5000:5000"
     deploy:
